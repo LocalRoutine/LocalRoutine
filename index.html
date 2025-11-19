@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Routine - 나만의 친환경 습관</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'lr-green': '#8BC34A',
+              'lr-green-dark': '#689F38',
+              'lr-blue': '#42A5F5',
+              'lr-blue-dark': '#1E88E5',
+              'lr-cream': '#F9FBE7',
+              'lr-yellow': '#FFF59D',
+              'lr-text': '#37474F',
+            },
+            fontFamily: {
+              'display': ['Jua', 'sans-serif'],
+              'body': ['Nanum Gothic', 'sans-serif'],
+            },
+            boxShadow: {
+              'cartoon': '4px 4px 0px 0px rgba(0,0,0,1)',
+              'cartoon-sm': '2px 2px 0px 0px rgba(0,0,0,1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for a fun feel */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F9FBE7;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #8BC34A;
+        border: 2px solid #F9FBE7;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #689F38;
+      }
+      body {
+        background-color: #F9FBE7; /* Light cream background */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body class="text-lr-text font-body antialiased selection:bg-lr-green selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
